@@ -2,6 +2,7 @@ import * as React from 'react';
 import styles from './TestProjekt.module.scss';
 import { ITestProjektProps } from './ITestProjektProps';
 import { escape } from '@microsoft/sp-lodash-subset';
+import Mycomponent from './MyComponent';
 
 export default class TestProjekt extends React.Component<ITestProjektProps, {}> {
   public render(): React.ReactElement<ITestProjektProps> {
@@ -36,6 +37,8 @@ export default class TestProjekt extends React.Component<ITestProjektProps, {}> 
             <li><a href="https://aka.ms/spfx-yeoman-api" target="_blank" rel="noreferrer">SharePoint Framework API reference</a></li>
             <li><a href="https://aka.ms/m365pnp" target="_blank" rel="noreferrer">Microsoft 365 Developer Community</a></li>
           </ul>
+          
+          <Mycomponent atribute='TEST'></Mycomponent>
         </div>
       </section>
     );
